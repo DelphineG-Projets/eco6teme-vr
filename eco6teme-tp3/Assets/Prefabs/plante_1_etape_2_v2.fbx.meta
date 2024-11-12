@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: d2687207676008b4ba7a3be02f62ba55
+guid: bc9b10d4fb660e847b8a717f546c16f4
 ModelImporter:
   serializedVersion: 22200
   internalIDToNameTable: []
@@ -8,22 +8,32 @@ ModelImporter:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: base
-    second: {fileID: 2100000, guid: 40e287a550b6e0f47ab1986f71ac0226, type: 2}
+    second: {fileID: 2100000, guid: 6c86326bf5f5f9742b15a889a771f851, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: base_org_1
-    second: {fileID: 2100000, guid: a600b637c6e5178488a3336cbfe92654, type: 2}
+      name: base_1
+    second: {fileID: 2100000, guid: be6b0ba7e2295b24f8a604e5fe8ca3b9, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: base_org_2
-    second: {fileID: 2100000, guid: be8b339ea7591024d94518a151ea6062, type: 2}
+      name: base_2
+    second: {fileID: 2100000, guid: 057b5dcaafea3a1419f91ce091c07320, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: orange1
-    second: {fileID: 2100000, guid: b7b6f2b8f8c76aa4487def31ccec147b, type: 2}
+      name: tige_bleu_1
+    second: {fileID: 2100000, guid: 71a3300caf2976d4f9d2c938fd249d37, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: tige_bleu_2
+    second: {fileID: 2100000, guid: e971d667e8a720b44a26c0008bb333b1, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: tip_bleu
+    second: {fileID: 2100000, guid: 40c496f214b486f45b9ca42d59455d25, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0

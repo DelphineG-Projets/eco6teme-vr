@@ -7,8 +7,33 @@ ModelImporter:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: orange
-    second: {fileID: 2100000, guid: 7c5cc1b27e8d54c47b073a650c518bf8, type: 2}
+      name: base
+    second: {fileID: 2100000, guid: fc5380eb82d90144b944faabe589ac7c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: base_org_1
+    second: {fileID: 2100000, guid: f6c2a64ff6fc914459aa8613c86e25b8, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: base_org_2
+    second: {fileID: 2100000, guid: de6a9ac83375e5549a2b26595e7c1c1c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: orange1
+    second: {fileID: 2100000, guid: c8a7476146ca1e34da8268440714d168, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: tip_rouge
+    second: {fileID: 2100000, guid: a7424987bd46a564885aebb6c94e3b4f, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: tip_rouge_1
+    second: {fileID: 2100000, guid: ef28ee48cfa993b4fafe77dc894a4508, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0
