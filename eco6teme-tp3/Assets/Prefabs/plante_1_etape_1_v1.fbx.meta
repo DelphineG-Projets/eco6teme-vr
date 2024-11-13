@@ -7,8 +7,23 @@ ModelImporter:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: orange
-    second: {fileID: 2100000, guid: b40b8036ad26ed84f989b3a7026e047c, type: 2}
+      name: base
+    second: {fileID: 2100000, guid: 40e287a550b6e0f47ab1986f71ac0226, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: base_org_1
+    second: {fileID: 2100000, guid: a600b637c6e5178488a3336cbfe92654, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: base_org_2
+    second: {fileID: 2100000, guid: be8b339ea7591024d94518a151ea6062, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: orange1
+    second: {fileID: 2100000, guid: b7b6f2b8f8c76aa4487def31ccec147b, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0
