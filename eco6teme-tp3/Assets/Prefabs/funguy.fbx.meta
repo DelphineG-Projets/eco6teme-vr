@@ -3,7 +3,17 @@ guid: 6da3da63624d3734287db74125a02b42
 ModelImporter:
   serializedVersion: 22200
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: _025_Mushy
+    second: {fileID: 2100000, guid: 772347f668bfa6a4cbe3bd39c02d2122, type: 2}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: 100Avatars_025_Mushy
+    second: {fileID: 2800000, guid: 7dd513792c91c214382c85fadbe31af9, type: 3}
   materials:
     materialImportMode: 2
     materialName: 0
