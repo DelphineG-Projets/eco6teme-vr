@@ -8,12 +8,12 @@ ModelImporter:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: base
-    second: {fileID: 2100000, guid: b21ce689edf86d941a7507f1a44461e1, type: 2}
+    second: {fileID: 2100000, guid: 8962d666ccee3f749b9e1eec4387bd42, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: tip
-    second: {fileID: 2100000, guid: 61d622eb2909cb14b9c512bca974c903, type: 2}
+    second: {fileID: 2100000, guid: b9147b755716acb4e9d60d5aa802401a, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0
