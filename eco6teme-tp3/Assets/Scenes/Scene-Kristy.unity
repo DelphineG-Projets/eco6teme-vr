@@ -620,6 +620,16 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1780500518158948057, guid: acd04309343cbdc4b82d1dfc8f126f2a,
         type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1780500518158948057, guid: acd04309343cbdc4b82d1dfc8f126f2a,
+        type: 3}
+      propertyPath: m_Looping
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1780500518158948057, guid: acd04309343cbdc4b82d1dfc8f126f2a,
+        type: 3}
       propertyPath: m_VideoClip
       value: 
       objectReference: {fileID: 32900000, guid: f93c58c473c69e4478c8930480c892eb,
@@ -627,27 +637,27 @@ PrefabInstance:
     - target: {fileID: 1780500518158948057, guid: acd04309343cbdc4b82d1dfc8f126f2a,
         type: 3}
       propertyPath: m_ControlledAudioTrackCount
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1780500518158948057, guid: acd04309343cbdc4b82d1dfc8f126f2a,
         type: 3}
       propertyPath: m_DirectAudioMutes.Array.size
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1780500518158948057, guid: acd04309343cbdc4b82d1dfc8f126f2a,
         type: 3}
       propertyPath: m_DirectAudioVolumes.Array.size
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1780500518158948057, guid: acd04309343cbdc4b82d1dfc8f126f2a,
         type: 3}
       propertyPath: m_EnabledAudioTracks.Array.size
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1780500518158948057, guid: acd04309343cbdc4b82d1dfc8f126f2a,
         type: 3}
       propertyPath: m_TargetAudioSources.Array.size
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -10769,6 +10779,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: computer_ecran
       objectReference: {fileID: 0}
+    - target: {fileID: 493320634201706472, guid: acd04309343cbdc4b82d1dfc8f126f2a,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1100725871856378084, guid: acd04309343cbdc4b82d1dfc8f126f2a,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -10847,7 +10862,7 @@ PrefabInstance:
     - target: {fileID: 1780500518158948057, guid: acd04309343cbdc4b82d1dfc8f126f2a,
         type: 3}
       propertyPath: m_Looping
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1780500518158948057, guid: acd04309343cbdc4b82d1dfc8f126f2a,
         type: 3}
@@ -10858,27 +10873,27 @@ PrefabInstance:
     - target: {fileID: 1780500518158948057, guid: acd04309343cbdc4b82d1dfc8f126f2a,
         type: 3}
       propertyPath: m_ControlledAudioTrackCount
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1780500518158948057, guid: acd04309343cbdc4b82d1dfc8f126f2a,
         type: 3}
       propertyPath: m_DirectAudioMutes.Array.size
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1780500518158948057, guid: acd04309343cbdc4b82d1dfc8f126f2a,
         type: 3}
       propertyPath: m_DirectAudioVolumes.Array.size
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1780500518158948057, guid: acd04309343cbdc4b82d1dfc8f126f2a,
         type: 3}
       propertyPath: m_EnabledAudioTracks.Array.size
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1780500518158948057, guid: acd04309343cbdc4b82d1dfc8f126f2a,
         type: 3}
       propertyPath: m_TargetAudioSources.Array.size
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4627275423617205332, guid: acd04309343cbdc4b82d1dfc8f126f2a,
         type: 3}
@@ -10918,6 +10933,11 @@ PrefabInstance:
     - target: {fileID: 4627275423617205332, guid: acd04309343cbdc4b82d1dfc8f126f2a,
         type: 3}
       propertyPath: m_UseBoundingSphereOverride
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5733896435663960614, guid: acd04309343cbdc4b82d1dfc8f126f2a,
+        type: 3}
+      propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -11614,7 +11634,7 @@ VideoPlayer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 844792142}
-  m_Enabled: 1
+  m_Enabled: 0
   m_VideoClip: {fileID: 32900000, guid: 0a9388ff097e8294188f46cfd62c2f77, type: 3}
   m_TargetCameraAlpha: 1
   m_TargetCamera3DLayout: 0
@@ -11637,10 +11657,22 @@ VideoPlayer:
   m_ControlledAudioTrackCount: 0
   m_PlayOnAwake: 1
   m_SkipOnDrop: 1
-  m_Looping: 0
+  m_Looping: 1
   m_WaitForFirstFrame: 1
   m_FrameReadyEventEnabled: 0
   m_VideoShaders: []
+--- !u!114 &844792154
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 844792142}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c13f778f13c5b5344a17d476055963d5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &847815291 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 120388, guid: de9be3d45d151314ba5e30e7c032f111,
@@ -13332,7 +13364,7 @@ VideoPlayer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1110424247}
-  m_Enabled: 1
+  m_Enabled: 0
   m_VideoClip: {fileID: 32900000, guid: 198595d6a7407434f972547799de8453, type: 3}
   m_TargetCameraAlpha: 1
   m_TargetCamera3DLayout: 0
@@ -13355,7 +13387,7 @@ VideoPlayer:
   m_ControlledAudioTrackCount: 0
   m_PlayOnAwake: 1
   m_SkipOnDrop: 1
-  m_Looping: 0
+  m_Looping: 1
   m_WaitForFirstFrame: 1
   m_FrameReadyEventEnabled: 0
   m_VideoShaders: []
@@ -18816,7 +18848,7 @@ Animator:
   m_GameObject: {fileID: 1892094081}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 49cfeb42f9d591c41995bc3204050d46, type: 2}
+  m_Controller: {fileID: 9100000, guid: 22f52f13cd557e34788d5245a50f9591, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -19588,7 +19620,7 @@ VideoPlayer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1975330571}
-  m_Enabled: 1
+  m_Enabled: 0
   m_VideoClip: {fileID: 32900000, guid: f63e6e9491de77f4c98a9dfd84fade54, type: 3}
   m_TargetCameraAlpha: 1
   m_TargetCamera3DLayout: 0
@@ -20971,6 +21003,11 @@ PrefabInstance:
       propertyPath: m_InteractionLayers.m_Bits
       value: 6
       objectReference: {fileID: 0}
+    - target: {fileID: 6603122072320476136, guid: 7b28a38905e380c44869d84c66d50310,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6964157967475579900, guid: 7b28a38905e380c44869d84c66d50310,
         type: 3}
       propertyPath: m_Size.x
@@ -20978,8 +21015,18 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6964157967475579900, guid: 7b28a38905e380c44869d84c66d50310,
         type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6964157967475579900, guid: 7b28a38905e380c44869d84c66d50310,
+        type: 3}
       propertyPath: m_IsTrigger
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8218302246320773952, guid: 7b28a38905e380c44869d84c66d50310,
+        type: 3}
+      propertyPath: m_Looping
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8516078351113327087, guid: 7b28a38905e380c44869d84c66d50310,
         type: 3}
@@ -21043,6 +21090,10 @@ PrefabInstance:
         type: 3}
       insertIndex: -1
       addedObject: {fileID: 844792148}
+    - targetCorrespondingSourceObject: {fileID: 6369031200464903232, guid: 7b28a38905e380c44869d84c66d50310,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 844792154}
     - targetCorrespondingSourceObject: {fileID: 3829449933567254375, guid: 7b28a38905e380c44869d84c66d50310,
         type: 3}
       insertIndex: -1
