@@ -16,6 +16,10 @@ public class Greenhouse : MonoBehaviour
     public GameObject particleswater;
     public GameObject btnWater;
 
+    public bool plant1;
+    public bool plant2;
+    public bool plant3;
+
     public GameObject light_teller_green_1;
     public GameObject light_teller_red_1;
     public GameObject light_teller_green_2;
