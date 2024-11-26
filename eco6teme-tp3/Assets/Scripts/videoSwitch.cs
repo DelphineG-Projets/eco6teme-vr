@@ -6,16 +6,25 @@ using UnityEngine.Video;
 
 public class videoSwitch : MonoBehaviour
 {
-    public VideoPlayer ecran1;
-    public VideoClip clip1;
-    public VideoPlayer ecran2;
+    public VideoPlayer ecranPanel;
     public VideoClip clip2;
-    public VideoPlayer ecran3;
-    public VideoClip clip3;
+    public Animator btnPanel;
 
-    public void changeClip()
+    public void onContact()
     {
-    
+        btnPanel.Play("introStart");
+    }
+
+
+    public void afterContact()
+    {
+            btnPanel.Play("introEnd");
+    }
+
+    public void clipSwitch(VideoClip clip)
+    {
+     clip2 = clip;
+     ecranPanel.clip = clip2; 
     }
 
 }
