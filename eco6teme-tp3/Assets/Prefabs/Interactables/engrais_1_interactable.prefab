@@ -548,6 +548,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: engrais_1
       objectReference: {fileID: 0}
+    - target: {fileID: 4387526718721807919, guid: aa866e02996c3de4caf639a23916081c,
+        type: 3}
+      propertyPath: m_TagString
+      value: engrais_1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
