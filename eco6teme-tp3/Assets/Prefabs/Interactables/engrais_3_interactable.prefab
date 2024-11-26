@@ -100,7 +100,7 @@ GameObject:
   - component: {fileID: 6849202632793965356}
   m_Layer: 0
   m_Name: engrais_3_interactable
-  m_TagString: Untagged
+  m_TagString: engrais_3
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
