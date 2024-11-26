@@ -8,6 +8,7 @@ public class Greenhouse : MonoBehaviour
 
     public bool watercanOn;
     public bool waterOn; //Pressed the btn
+    public bool step1; //Water is put
 
     public GameObject particleswater;
     public GameObject btnWater;
@@ -46,6 +47,8 @@ public class Greenhouse : MonoBehaviour
      public GameObject light_teller_red_2;
      public GameObject light_teller_red_3;*/
 
+
+    //WATER STEP 1
     public void waterTrue()
     {
         watercanOn = true;
@@ -64,6 +67,12 @@ public class Greenhouse : MonoBehaviour
         }
     }
 
-
+    public void balanceWater()
+    {
+        if(waterOn)
+        {
+            step1 = true;
+        }
+    }
 
 }
