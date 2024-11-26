@@ -4,27 +4,68 @@ using UnityEngine;
 
 public class AnimationPorte : MonoBehaviour
 {
+    public GameObject Porte;
+    public Transform to;
+    private Quaternion initialRotation;
+
+    private void Start()
+    {
+        // Save the initial rotation of the door
+        initialRotation = Porte.transform.rotation;
+    }
+
     private void OnTriggerEnter(Collider other)
     {
-        // Check if the other object has the "Player" tag
         if (other.CompareTag("Player"))
         {
-            Debug.Log("Player entered trigger zone, opening door.");
-            // Rotate the door to open
-            Vector3 openRotation = new Vector3(0, 90, 0); // Customize rotation as needed
-            transform.eulerAngles = openRotation;
+            Debug.Log("Player enter storage room, opening door");
+            StartCoroutine(OpenDoorSmoothly());
         }
     }
 
+ 
     private void OnTriggerExit(Collider other)
     {
-        // Check if the other object has the "Player" tag
         if (other.CompareTag("Player"))
         {
-            Debug.Log("Player exited trigger zone, closing door.");
-            // Rotate the door to close
-            Vector3 closeRotation = new Vector3(0, 0, 0); // Customize rotation as needed
-            transform.eulerAngles = closeRotation;
+            Debug.Log("Player exit storage room, closing door");
+            StartCoroutine(CloseDoorSmoothly());
         }
+    }
+
+    private IEnumerator CloseDoorSmoothly()
+    {
+        float closeTime = 0.5f; // Duration to close the door
+        float elapsedTime = 0.0f;
+
+        Quaternion startRotation = Porte.transform.rotation;
+
+        while (elapsedTime < closeTime)
+        {
+            elapsedTime += Time.deltaTime;
+            float t = elapsedTime / closeTime;
+            Porte.transform.rotation = Quaternion.Slerp(startRotation, initialRotation, t);
+            yield return null;
+        }
+        // Ensure the door is fully closed
+        Porte.transform.rotation = initialRotation;
+    }
+
+    private IEnumerator OpenDoorSmoothly()
+    {
+        float openTime = 0.5f; // Duration to open the door
+        float elapsedTime = 0.0f;
+
+        Quaternion startRotation = Porte.transform.rotation;
+
+        while (elapsedTime < openTime)
+        {
+            elapsedTime += Time.deltaTime;
+            float t = elapsedTime / openTime;
+            Porte.transform.rotation = Quaternion.Slerp(startRotation, to.rotation, t);
+            yield return null;
+        }
+        // Ensure the door is fully opened
+        Porte.transform.rotation = to.rotation;
     }
 }

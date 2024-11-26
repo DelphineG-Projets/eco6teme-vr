@@ -4,35 +4,75 @@ using UnityEngine;
 
 public class Greenhouse : MonoBehaviour
 {
-    // Lights indicating puzzle progress
+
+
+    public bool watercanOn;
+    public bool waterOn; //Pressed the btn
+    public bool step1; //Water is put
+
+    public GameObject particleswater;
+    public GameObject btnWater;
+
+
+    /*  // Plant 1 stages
+     *      // Sockets
+    public GameObject balance_interactable;
+    public GameObject waterpump_interactable;
+
+    // Watercan
+    public LayerMask watercan = LayerMask.GetMask("Wall");
+    public GameObject particles;
+     public GameObject plante_1_etape_0;
+     public GameObject plante_1_etape_1;
+     public GameObject plante_1_etape_2;
+     public GameObject plante_1_etape_3;
+
+     // Plant 2 stages
+     public GameObject plante_2_etape_0;
+     public GameObject plante_2_etape_1;
+     public GameObject plante_2_etape_2;
+     public GameObject plante_2_etape_3;
+
+     // Plant 3 stages
+     public GameObject plante_3_etape_0;
+     public GameObject plante_3_etape_1;
+     public GameObject plante_3_etape_2;
+     public GameObject plante_3_etape_3;
+
+     // Lumières puzzle progression
     public GameObject light_teller_green_1;
-    public GameObject light_teller_green_2;
-    public GameObject light_teller_green_3;
-    public GameObject light_teller_red_1;
-    public GameObject light_teller_red_2;
-    public GameObject light_teller_red_3;
+     public GameObject light_teller_green_2;
+     public GameObject light_teller_green_3;
+     public GameObject light_teller_red_1;
+     public GameObject light_teller_red_2;
+     public GameObject light_teller_red_3;*/
 
-    // Plant stages
-    public GameObject plante_3_etape_1;
-    public GameObject plante_3_etape_2;
-    public GameObject plante_3_etape_3;
 
-    void Update()
+    //WATER STEP 1
+    public void waterTrue()
     {
-        if (plante_3_etape_1.activeSelf)
+        watercanOn = true;
+    }
+
+    public void waterFalse()
+    {
+        watercanOn = false;
+    }
+
+    public void btnwaterOn()
+    {
+        if (watercanOn)
         {
-            light_teller_green_1.SetActive(true);
-            light_teller_red_1.SetActive(false);
-        }
-        if (plante_3_etape_2.activeSelf)
-        {
-            light_teller_green_2.SetActive(true);
-            light_teller_red_2.SetActive(false);
-        }
-        if (plante_3_etape_3.activeSelf)
-        {
-            light_teller_green_3.SetActive(true);
-            light_teller_red_3.SetActive(false);
+            waterOn = true;
         }
     }
+
+    public void balanceWater()
+    {
+        if(waterOn)
+        {
+            step1 = true;
+        }
+    }
+
 }
