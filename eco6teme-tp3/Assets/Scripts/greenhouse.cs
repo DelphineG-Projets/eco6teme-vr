@@ -4,7 +4,36 @@ using UnityEngine;
 
 public class Greenhouse : MonoBehaviour
 {
-    // Lights indicating puzzle progress
+
+    // Sockets
+    public GameObject balance_interactable;
+    public GameObject waterpump_interactable;
+
+    // Watercan
+    public GameObject watercan;
+    public GameObject particles;
+    public bool watercanOn;
+
+
+    // Plant 1 stages
+    public GameObject plante_1_etape_0;
+    public GameObject plante_1_etape_1;
+    public GameObject plante_1_etape_2;
+    public GameObject plante_1_etape_3;
+
+    // Plant 2 stages
+    public GameObject plante_2_etape_0;
+    public GameObject plante_2_etape_1;
+    public GameObject plante_2_etape_2;
+    public GameObject plante_2_etape_3;
+
+    // Plant 3 stages
+    public GameObject plante_3_etape_0;
+    public GameObject plante_3_etape_1;
+    public GameObject plante_3_etape_2;
+    public GameObject plante_3_etape_3;
+
+    // Lumières puzzle progression
     public GameObject light_teller_green_1;
     public GameObject light_teller_green_2;
     public GameObject light_teller_green_3;
@@ -12,27 +41,15 @@ public class Greenhouse : MonoBehaviour
     public GameObject light_teller_red_2;
     public GameObject light_teller_red_3;
 
-    // Plant stages
-    public GameObject plante_3_etape_1;
-    public GameObject plante_3_etape_2;
-    public GameObject plante_3_etape_3;
 
-    void Update()
+
+   public void WatercanActivate()
     {
-        if (plante_3_etape_1.activeSelf)
+        watercanOn = false;
+       if (particles && )
         {
-            light_teller_green_1.SetActive(true);
-            light_teller_red_1.SetActive(false);
+            watercanOn = true;
         }
-        if (plante_3_etape_2.activeSelf)
-        {
-            light_teller_green_2.SetActive(true);
-            light_teller_red_2.SetActive(false);
-        }
-        if (plante_3_etape_3.activeSelf)
-        {
-            light_teller_green_3.SetActive(true);
-            light_teller_red_3.SetActive(false);
-        }
+
     }
 }
