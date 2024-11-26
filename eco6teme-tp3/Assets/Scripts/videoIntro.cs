@@ -12,11 +12,5 @@ public class videoIntro : MonoBehaviour
     public void Detection()
     {
         video1.SetActive(true);
-
-        if (video1.Stop)
-        {
-            video1.SetActive(false);
-            video2.SetActive(true);
-        }
     }
 }
