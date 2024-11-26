@@ -1,17 +1,27 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.XR.Interaction.Toolkit;
 
 public class Greenhouse : MonoBehaviour
 {
 
+    public XRSocketInteractor balanceSocket;
 
     public bool watercanOn;
     public bool waterOn; //Pressed the btn
-    public bool step1; //Water is put
+    public bool stepOne; 
+    public bool stepTwo; 
 
     public GameObject particleswater;
     public GameObject btnWater;
+
+    public GameObject light_teller_green_1;
+    public GameObject light_teller_red_1;
+    public GameObject light_teller_green_2;
+    public GameObject light_teller_red_2;
+    public GameObject light_teller_green_3;
+    public GameObject light_teller_red_3;
 
 
     /*  // Plant 1 stages
@@ -40,10 +50,10 @@ public class Greenhouse : MonoBehaviour
      public GameObject plante_3_etape_3;
 
      // Lumières puzzle progression
-    public GameObject light_teller_green_1;
+    public GameObject light_teller_green_1
      public GameObject light_teller_green_2;
      public GameObject light_teller_green_3;
-     public GameObject light_teller_red_1;
+     public GameObject light_teller_red_1
      public GameObject light_teller_red_2;
      public GameObject light_teller_red_3;*/
 
@@ -67,12 +77,34 @@ public class Greenhouse : MonoBehaviour
         }
     }
 
-    public void balanceWater()
+
+    public void balance()
     {
-        if(waterOn)
+        if ((balanceSocket.interactionLayers & InteractionLayerMask.GetMask("Arrosoir")) != 0 & waterOn)
         {
-            step1 = true;
+            stepOne = true;
+            light_teller_green_1.SetActive(true);
+            light_teller_red_1.SetActive(false);
+            waterOn = false;
+        }
+
+        if ((balanceSocket.interactionLayers & InteractionLayerMask.GetMask("engrais_vert")) != 0 & stepOne)
+        {
+            stepTwo = true;
+            light_teller_green_2.SetActive(true);
+            light_teller_red_2.SetActive(false);
+        }
+
+    }
+
+    public void Light()
+    {
+        if (stepTwo)
+        {
+            light_teller_green_3.SetActive(true);
+            light_teller_red_3.SetActive(false);
         }
     }
+    
 
 }
