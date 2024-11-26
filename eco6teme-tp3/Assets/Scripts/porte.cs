@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class AnimationPorte : MonoBehaviour
 {
+    public GameObject spaceDoorSound;
     public GameObject Porte;
     public Transform to;
     private Quaternion initialRotation;
@@ -20,6 +21,11 @@ public class AnimationPorte : MonoBehaviour
         {
             Debug.Log("Player enter storage room, opening door");
             StartCoroutine(OpenDoorSmoothly());
+            spaceDoorSound.SetActive(true);
+        }
+        else
+        {
+            spaceDoorSound.SetActive(false);
         }
     }
 
@@ -30,6 +36,7 @@ public class AnimationPorte : MonoBehaviour
         {
             Debug.Log("Player exit storage room, closing door");
             StartCoroutine(CloseDoorSmoothly());
+            spaceDoorSound.SetActive(false);
         }
     }
 
