@@ -5,6 +5,10 @@ TagManager:
   serializedVersion: 2
   tags:
   - ZonePorte
+  - arrosoir
+  - engrais_1
+  - engrais_2
+  - engrais_3
   layers:
   - Default
   - TransparentFX
