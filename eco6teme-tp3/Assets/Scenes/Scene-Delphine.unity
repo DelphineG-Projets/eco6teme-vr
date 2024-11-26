@@ -3908,13 +3908,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 287291577}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.99846625, y: -0, z: -0, w: 0.055365562}
+  m_LocalRotation: {x: 0.9998202, y: -0, z: -0, w: -0.018966852}
   m_LocalPosition: {x: -0.19842947, y: 0.2571039, z: -0.15082614}
-  m_LocalScale: {x: 0.004847315, y: 0.0048473133, z: 0.0048473133}
+  m_LocalScale: {x: 0.13572691, y: 0.13572687, z: 0.31921604}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 71215663}
-  m_LocalEulerAnglesHint: {x: 83.652, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 182.174, y: 0, z: 0}
 --- !u!199 &287291579
 ParticleSystemRenderer:
   serializedVersion: 6
@@ -4012,7 +4012,7 @@ ParticleSystem:
   startDelay:
     serializedVersion: 2
     minMaxState: 0
-    scalar: 0
+    scalar: 2
     minScalar: 0
     maxCurve:
       serializedVersion: 2
@@ -14447,6 +14447,11 @@ PrefabInstance:
       propertyPath: m_LocalPosition.y
       value: 0.25
       objectReference: {fileID: 0}
+    - target: {fileID: 7481661664934585745, guid: cf0a63b2da7d07246ab1a80a55267ee5,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7526679177944043694, guid: cf0a63b2da7d07246ab1a80a55267ee5,
         type: 3}
       propertyPath: m_Timeout
@@ -21217,6 +21222,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   watercanOn: 0
+  waterOn: 0
+  particleswater: {fileID: 287291577}
+  btnWater: {fileID: 71215660}
 --- !u!4 &1484764397
 Transform:
   m_ObjectHideFlags: 0

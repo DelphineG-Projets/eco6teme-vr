@@ -9,7 +9,8 @@ public class Greenhouse : MonoBehaviour
     public bool watercanOn;
     public bool waterOn; //Pressed the btn
 
-
+    public GameObject particleswater;
+    public GameObject btnWater;
 
 
     /*  // Plant 1 stages
@@ -59,8 +60,10 @@ public class Greenhouse : MonoBehaviour
     {
         if (watercanOn)
         {
-            particleswater.SetActive(true);
+            waterOn = true;
         }
     }
+
+
 
 }
