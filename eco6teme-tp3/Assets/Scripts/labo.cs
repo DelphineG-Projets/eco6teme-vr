@@ -97,7 +97,7 @@ public class Labo : MonoBehaviour
                 fiole_1_etape_0.SetActive(true);
                 fioleOn = true;
             }
-            if (selectedObject.CompareTag("arrosoir_1") && waterOn && fioleOn)
+            if (selectedObject.CompareTag("arrosoir_2") && waterOn && fioleOn)
             {
                 Debug.Log("Engrais Russit Réussit");
                 fiole_1_etape_0.SetActive(false);
@@ -117,7 +117,7 @@ public class Labo : MonoBehaviour
                 fioleOn = true;
 
 }
-            if (selectedObject.CompareTag("arrosoir_1") && waterOn && fioleOn)
+            if (selectedObject.CompareTag("arrosoir_2") && waterOn && fioleOn)
             {
                 Debug.Log("Engrais Russit Réussit");
                 fiole_2_etape_0.SetActive(false);
@@ -136,7 +136,7 @@ public class Labo : MonoBehaviour
                 fiole_3_etape_0.SetActive(true);
                 fioleOn = true;
             }
-            if (selectedObject.CompareTag("arrosoir_1") && waterOn && fioleOn)
+            if (selectedObject.CompareTag("arrosoir_2") && waterOn && fioleOn)
             {
                 Debug.Log("Engrais Russit Réussit");
                 fiole_3_etape_0.SetActive(false);
