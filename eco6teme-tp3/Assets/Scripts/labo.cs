@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.XR.Interaction.Toolkit;
 
-public class lab : MonoBehaviour
+public class labo : MonoBehaviour
 {
     public XRSocketInteractor balanceSocket;
     public bool watercanOn;
@@ -169,7 +169,7 @@ public class lab : MonoBehaviour
             video3.SetActive(false);
             video4.SetActive(true);
         }
-        
+
 
     }
 

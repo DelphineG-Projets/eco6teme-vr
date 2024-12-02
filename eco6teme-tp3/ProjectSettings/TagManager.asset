@@ -9,6 +9,11 @@ TagManager:
   - engrais_2
   - engrais_3
   - arrosoir_1
+  - btnPanneau
+  - arrosoir
+  - fiole_1
+  - fiole_2
+  - fiole_3
   layers:
   - Default
   - TransparentFX
