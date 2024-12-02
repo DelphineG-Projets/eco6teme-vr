@@ -176,7 +176,7 @@ public class Greenhouse : MonoBehaviour
         {
             video3.SetActive(false);
             video4.SetActive(true);
-        }d
+        }
 
     }
 

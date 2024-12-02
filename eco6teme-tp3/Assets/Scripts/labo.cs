@@ -3,11 +3,14 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.XR.Interaction.Toolkit;
 
-public class labo : MonoBehaviour
+public class Labo : MonoBehaviour
 {
     public XRSocketInteractor balanceSocket;
     public bool watercanOn;
     public bool waterOn;
+
+    public bool fioleOn;
+
     public bool stepZeroLab;
     public bool stepOneLab;
     public bool stepTwoLab;
@@ -88,52 +91,59 @@ public class labo : MonoBehaviour
 
         if (stepZeroLab)
         {
-            if (selectedObject.CompareTag("arrosoir_1") && waterOn)
+            if (selectedObject.CompareTag("fiole_1"))
             {
                 Debug.Log("Arrosoir Réussit");
                 fiole_1_etape_0.SetActive(true);
-                waterOn = false;
+                fioleOn = true;
             }
-            if (selectedObject.CompareTag("fiole_1") && fiole_1_etape_1)
+            if (selectedObject.CompareTag("arrosoir_1") && waterOn && fioleOn)
             {
                 Debug.Log("Engrais Russit Réussit");
-                fiole_1_etape_1.SetActive(false);
-                fiole_1_etape_2.SetActive(true);
+                fiole_1_etape_0.SetActive(false);
+                fiole_1_etape_1.SetActive(true);
                 light_square = true;
+                waterOn = false;
+                fioleOn = false;
             }
         }
 
         if (stepOneLab)
         {
-            if (selectedObject.CompareTag("arrosoir_1") && waterOn)
+            if (selectedObject.CompareTag("fiole_2"))
             {
                 Debug.Log("Arrosoir Réussit");
                 fiole_2_etape_0.SetActive(true);
-                waterOn = false;
-            }
-            if (selectedObject.CompareTag("fiole_2") && fiole_2_etape_0)
+                fioleOn = true;
+
+}
+            if (selectedObject.CompareTag("arrosoir_1") && waterOn && fioleOn)
             {
                 Debug.Log("Engrais Russit Réussit");
-                fiole_2_etape_1.SetActive(false);
-                fiole_2_etape_2.SetActive(true);
+                fiole_2_etape_0.SetActive(false);
+                fiole_2_etape_1.SetActive(true);
                 light_square = true;
+                waterOn = false;
+                fioleOn = false;
             }
         }
 
         if (stepTwoLab)
         {
-            if (selectedObject.CompareTag("arrosoir_1") && waterOn)
+            if (selectedObject.CompareTag("fiole_3"))
             {
                 Debug.Log("Arrosoir Réussit");
                 fiole_3_etape_0.SetActive(true);
-                waterOn = false;
+                fioleOn = true;
             }
-            if (selectedObject.CompareTag("fiole_3") && fiole_3_etape_0)
+            if (selectedObject.CompareTag("arrosoir_1") && waterOn && fioleOn)
             {
                 Debug.Log("Engrais Russit Réussit");
-                fiole_3_etape_1.SetActive(false);
-                fiole_3_etape_2.SetActive(true);
+                fiole_3_etape_0.SetActive(false);
+                fiole_3_etape_1.SetActive(true);
                 light_square = true;
+                waterOn = false;
+                fioleOn = false;
             }
         }
     }
@@ -148,8 +158,7 @@ public class labo : MonoBehaviour
 
         if (stepOneLab)
         {
-            fiole_1_etape_3.SetActive(false);
-            fiole_2_etape_0.SetActive(true);
+            fiole_1_etape_2.SetActive(false);
             video1.SetActive(false);
             video2.SetActive(true);
             Debug.Log("Plante 1 étape 3 est maintenant désactivée et Plante 2 étape 0 est activée");
@@ -157,8 +166,7 @@ public class labo : MonoBehaviour
 
         if (stepTwoLab)
         {
-            fiole_2_etape_3.SetActive(false);
-            fiole_3_etape_0.SetActive(true);
+            fiole_2_etape_2.SetActive(false);
             video2.SetActive(false);
             video3.SetActive(true);
             Debug.Log("Plante 1 étape 3 est maintenant désactivée et Plante 2 étape 0 est activée");
@@ -194,8 +202,8 @@ public class labo : MonoBehaviour
             if (lightchange)
             {
                 light_square = false;
-                fiole_1_etape_2.SetActive(false);
-                fiole_1_etape_3.SetActive(true);
+                fiole_1_etape_1.SetActive(false);
+                fiole_1_etape_2.SetActive(true);
                 Debug.Log("Light Réussit ! Plante 1 réussit");
                 light_teller_green_1.SetActive(true);
                 light_teller_red_1.SetActive(false);
@@ -210,8 +218,8 @@ public class labo : MonoBehaviour
             if (lightchange)
             {
                 light_square = false;
-                fiole_2_etape_2.SetActive(false);
-                fiole_2_etape_3.SetActive(true);
+                fiole_2_etape_1.SetActive(false);
+                fiole_2_etape_2.SetActive(true);
                 light_teller_green_2.SetActive(true);
                 light_teller_red_2.SetActive(false);
                 Debug.Log("Light Réussit ! Plante 2 réussit");
@@ -226,8 +234,8 @@ public class labo : MonoBehaviour
             if (lightchange)
             {
                 light_square = false;
-                fiole_3_etape_2.SetActive(false);
-                fiole_3_etape_3.SetActive(true);
+                fiole_3_etape_1.SetActive(false);
+                fiole_3_etape_2.SetActive(true);
                 light_teller_green_3.SetActive(true);
                 light_teller_red_3.SetActive(false);
                 Debug.Log("Light Réussit ! Plante 2 réussit");
