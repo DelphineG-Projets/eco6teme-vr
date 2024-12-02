@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.XR.Interaction.Toolkit;
 
-public class Greenhouse : MonoBehaviour
+public class lab : MonoBehaviour
 {
     public XRSocketInteractor balanceSocket;
     public bool watercanOn;
@@ -172,11 +172,12 @@ public class Greenhouse : MonoBehaviour
             Debug.Log("Plante 1 étape 3 est maintenant désactivée et Plante 2 étape 0 est activée");
         }
 
-        if(stepThreePlant)
+        if (stepThreePlant)
         {
             video3.SetActive(false);
             video4.SetActive(true);
-        }d
+        }
+        
 
     }
 
@@ -192,7 +193,7 @@ public class Greenhouse : MonoBehaviour
 
         light_red.SetActive(false);
         light_green.SetActive(true);
-}
+    }
 
     public void Update()
     {
@@ -240,11 +241,11 @@ public class Greenhouse : MonoBehaviour
                 Debug.Log("Light Réussit ! Plante 2 réussit");
                 stepThreePlant = true;
                 stepTwoPlant = false;
-            
+
             }
         }
-    
-        if(stepThreePlant)
+
+        if (stepThreePlant)
         {
             Debug.Log("JEU FINI");
         }
