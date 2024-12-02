@@ -15,6 +15,11 @@ public class Greenhouse : MonoBehaviour
     public GameObject particleswater;
     public GameObject btnWater;
 
+    public GameObject video1;
+    public GameObject video2;
+    public GameObject video3;
+    public GameObject video4;
+
     public bool plant1;
     public bool plant2;
     public bool plant3;
@@ -153,6 +158,8 @@ public class Greenhouse : MonoBehaviour
         {
             plante_1_etape_3.SetActive(false);
             plante_2_etape_0.SetActive(true);
+            video1.SetActive(false);
+            video2.SetActive(true);
             Debug.Log("Plante 1 étape 3 est maintenant désactivée et Plante 2 étape 0 est activée");
         }
 
@@ -160,7 +167,15 @@ public class Greenhouse : MonoBehaviour
         {
             plante_2_etape_3.SetActive(false);
             plante_3_etape_0.SetActive(true);
+            video2.SetActive(false);
+            video3.SetActive(true);
             Debug.Log("Plante 1 étape 3 est maintenant désactivée et Plante 2 étape 0 est activée");
+        }
+
+        if(stepThreePlant)
+        {
+            video3.SetActive(false);
+            video4.SetActive(true);
         }
 
     }
