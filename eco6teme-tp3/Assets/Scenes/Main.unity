@@ -4525,7 +4525,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: acd34190c18c0414d8d25158666d80fc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  spaceDoorSound: {fileID: 0}
+  spaceDoorSound: {fileID: 1604706469}
   Porte: {fileID: 497082633}
   to: {fileID: 1586580147}
 --- !u!65 &98736029
@@ -6662,7 +6662,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: acd34190c18c0414d8d25158666d80fc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  spaceDoorSound: {fileID: 0}
+  spaceDoorSound: {fileID: 1604706469}
   Porte: {fileID: 240181408}
   to: {fileID: 361912060}
 --- !u!65 &149366753
@@ -12774,7 +12774,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: acd34190c18c0414d8d25158666d80fc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  spaceDoorSound: {fileID: 0}
+  spaceDoorSound: {fileID: 1604706469}
   Porte: {fileID: 858613430}
   to: {fileID: 698807238}
 --- !u!65 &278494374
@@ -22610,7 +22610,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: acd34190c18c0414d8d25158666d80fc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  spaceDoorSound: {fileID: 0}
+  spaceDoorSound: {fileID: 1604706469}
   Porte: {fileID: 1749929861}
   to: {fileID: 1273632384}
 --- !u!65 &502047046
@@ -39369,7 +39369,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: acd34190c18c0414d8d25158666d80fc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  spaceDoorSound: {fileID: 0}
+  spaceDoorSound: {fileID: 1604706469}
   Porte: {fileID: 913598580}
   to: {fileID: 1659134163}
 --- !u!65 &751205455
@@ -42271,7 +42271,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: acd34190c18c0414d8d25158666d80fc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  spaceDoorSound: {fileID: 0}
+  spaceDoorSound: {fileID: 1604706469}
   Porte: {fileID: 1243650549}
   to: {fileID: 203347905}
 --- !u!65 &815174974
@@ -85025,6 +85025,134 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 5, y: 2.1021006, z: 1.0000001}
   m_Center: {x: -2.5, y: 0.9302646, z: 0}
+--- !u!1 &1604706469
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1604706471}
+  - component: {fileID: 1604706470}
+  m_Layer: 0
+  m_Name: doorSoundEffect
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!82 &1604706470
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1604706469}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: b7d8f94efb4e1af4db22f0df700213d2, type: 3}
+  m_PlayOnAwake: 1
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 82
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+--- !u!4 &1604706471
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1604706469}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -3.7999961, y: 2.46, z: 86.100006}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1605106267
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -99627,7 +99755,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: acd34190c18c0414d8d25158666d80fc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  spaceDoorSound: {fileID: 0}
+  spaceDoorSound: {fileID: 1604706469}
   Porte: {fileID: 563598490}
   to: {fileID: 1531819968}
 --- !u!65 &1874200491
@@ -105419,7 +105547,7 @@ PrefabInstance:
     - target: {fileID: 4892947771780672541, guid: cf0a63b2da7d07246ab1a80a55267ee5,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.011
+      value: 0.889
       objectReference: {fileID: 0}
     - target: {fileID: 4892947771780672541, guid: cf0a63b2da7d07246ab1a80a55267ee5,
         type: 3}
@@ -109147,7 +109275,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: acd34190c18c0414d8d25158666d80fc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  spaceDoorSound: {fileID: 0}
+  spaceDoorSound: {fileID: 1604706469}
   Porte: {fileID: 2032883609}
   to: {fileID: 931508869}
 --- !u!65 &2068434028
@@ -117607,3 +117735,4 @@ SceneRoots:
   - {fileID: 253925764}
   - {fileID: 587455832}
   - {fileID: 798042570}
+  - {fileID: 1604706471}
