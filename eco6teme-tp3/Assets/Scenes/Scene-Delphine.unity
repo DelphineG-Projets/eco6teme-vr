@@ -23506,7 +23506,7 @@ GameObject:
   m_Component:
   - component: {fileID: 992660583}
   m_Layer: 0
-  m_Name: LAB (1)
+  m_Name: LAB
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -23534,6 +23534,7 @@ Transform:
   - {fileID: 1494403991}
   - {fileID: 1415603459}
   - {fileID: 1122886863}
+  - {fileID: 1746088422}
   - {fileID: 1364801390}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -42009,11 +42010,11 @@ Transform:
   m_GameObject: {fileID: 1746088420}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: 0.24400522, z: -0, w: 0.96977395}
-  m_LocalPosition: {x: -52.92, y: 3.08, z: 39.863}
+  m_LocalPosition: {x: 2.710003, y: 1.9630688, z: -2.2369995}
   m_LocalScale: {x: 0.16034794, y: 0.16034794, z: 0.16034794}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 992660583}
   m_LocalEulerAnglesHint: {x: 0, y: 28.246, z: 0}
 --- !u!1 &1746200224
 GameObject:
@@ -50550,4 +50551,3 @@ SceneRoots:
   - {fileID: 1614822761}
   - {fileID: 1857971267}
   - {fileID: 992660583}
-  - {fileID: 1746088422}
