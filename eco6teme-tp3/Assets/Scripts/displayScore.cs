@@ -28,7 +28,7 @@ public class displayScore : MonoBehaviour
         }
         else
         {
-            bestTimeText.text = "No best time recorded yet.";
+            bestTimeText.text = "00:00";
         }
 
     }
