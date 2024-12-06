@@ -16,7 +16,7 @@ public class startGame : MonoBehaviour
 
 	public void EndToMenu()
 	{
-        if (hasBeenSelected)
+        if (hasBeenSelected && FindObjectOfType<Greenhouse>().stepThreePlant)
         {
             Debug.Log("Second select action performed!");
             FindObjectOfType<Timer>().RecordTime(); // Record the time before transitioning
