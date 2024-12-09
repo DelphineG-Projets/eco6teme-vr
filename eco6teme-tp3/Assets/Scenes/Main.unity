@@ -17681,7 +17681,7 @@ MonoBehaviour:
   video4: {fileID: 1822892810}
   plant1: 0
   plant2: 0
-  plant3: 1
+  plant3: 0
   light_red: {fileID: 1887298142}
   light_green: {fileID: 2109707113}
   light_square: 0
@@ -93302,7 +93302,7 @@ PrefabInstance:
     - target: {fileID: 6598815579406187037, guid: 18ddb545287c546e19cc77dc9fbb2189,
         type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
